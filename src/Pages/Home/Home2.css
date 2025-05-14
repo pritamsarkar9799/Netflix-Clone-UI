@@ -1,0 +1,92 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.youtube-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.youtube-background iframe {
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.hero-caption {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 250px; /* Adjust this value as needed */
+
+}
+
+.caption-img {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* .hero-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.btn, .dark-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-btn {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+
+.more-cards {
+  margin-top: 50px;
+} */
+.hero-btns{
+    display:flex;
+    gap:10px;
+    margin-bottom: 50px;
+}
+.hero-btns .btn img{
+    width:25px;
+}
+.hero-btns .btn{
+    border:0;
+    outline:0;
+    padding:8px 20px;
+    display:inline-flex;
+    align-items: center;
+    gap:10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor:pointer;
+}
+.hero-btns .btn.dark-btn{      
+    color:#fff;
+    background:#6d6d6eb3;
+}
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+}
+.hero-btns .btn.dark-btn:hover{
+    background: #6d6d6e66;
+}
